@@ -1,0 +1,80 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+.navbar-style {
+  background-color: #043873;
+  padding: 1rem 0;
+}
+
+.container-navbar {
+  margin: 0 10%;
+}
+
+#logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#custom-link {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.button-login {
+  background-color: #ffe492;
+  color: #043873;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 1.125rem 2.5rem;
+  border-radius: 8px;
+  line-height: 23px;
+}
+
+.button-entre {
+  background-color: #4f9cf9;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 1.125rem 1.5rem;
+  border-radius: 8px;
+  margin-left: 1.5rem;
+  line-height: 23px;
+}
+
+/* Main Container */
+.main-container {
+  background-color: #043873;
+}
+
+/* Banner 1 */
+.banner1-container {
+  display: flex;
+  padding: 8.75rem 0;
+  margin: 0 10%;
+}
+
+.banner1-info-container {
+  color: #ffffff;
+}
+
+.banner1-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner1-info {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.img-content {
+}
