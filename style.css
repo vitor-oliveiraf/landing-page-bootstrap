@@ -1,3 +1,8 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 16px;
 }
@@ -14,11 +19,7 @@ body {
 /* Navbar */
 .navbar-style {
   background-color: #043873;
-  padding: 1rem 0;
-}
-
-.container-navbar {
-  max-width: 1600px;
+  max-width: 1800px;
 }
 
 #logo {
@@ -41,6 +42,7 @@ body {
   padding: 1.125rem 2.5rem;
   border-radius: 8px;
   line-height: 23px;
+  margin-right: 1.5rem;
 }
 
 .button-entre {
@@ -50,39 +52,40 @@ body {
   font-weight: 500;
   padding: 1.125rem 1.5rem;
   border-radius: 8px;
-  margin-left: 1.5rem;
   line-height: 23px;
 }
 
 /* Main Container */
-.main-container {
-  background-color: #ffffff;
+.container-main {
+  max-width: 1800px;
 }
 
 /* Banner 1 */
-.banner1-container {
-  max-width: 1600px;
+.banner-blue-container {
+  max-width: 1800px;
+  background-color: #043873;
   padding: var(--p-banners);
-}
-
-.banner1-info-container {
   color: #ffffff;
 }
 
-.banner1-title {
+.banner-title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.banner1-info {
+.banner-info {
   font-size: 1.125rem;
   font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.img-content {
+  max-width: 730px;
 }
 
 /* Container banners 2/3 */
 .container-banners-2-3 {
-  wi
   background-color: #ffffff;
 }
 
@@ -107,5 +110,8 @@ body {
   font-weight: 500;
 }
 
-.img-content {
+@media screen and (max-width: 1199px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
 }
