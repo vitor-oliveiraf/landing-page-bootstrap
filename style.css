@@ -6,6 +6,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Variables */
+:root {
+  --p-banners: 8.75rem 0;
+}
+
 /* Navbar */
 .navbar-style {
   background-color: #043873;
@@ -13,7 +18,7 @@ body {
 }
 
 .container-navbar {
-  margin: 0 10%;
+  max-width: 1600px;
 }
 
 #logo {
@@ -51,14 +56,13 @@ body {
 
 /* Main Container */
 .main-container {
-  background-color: #043873;
+  background-color: #ffffff;
 }
 
 /* Banner 1 */
 .banner1-container {
-  display: flex;
-  padding: 8.75rem 0;
-  margin: 0 10%;
+  max-width: 1600px;
+  padding: var(--p-banners);
 }
 
 .banner1-info-container {
@@ -72,6 +76,33 @@ body {
 }
 
 .banner1-info {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* Container banners 2/3 */
+.container-banners-2-3 {
+  wi
+  background-color: #ffffff;
+}
+
+/* Banner 2 */
+.banner2-container {
+  max-width: 1600px;
+  padding: var(--p-banners);
+}
+
+.banner2-info-container {
+  color: #212529;
+}
+
+.banner2-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner2-info {
   font-size: 1.125rem;
   font-weight: 500;
 }
