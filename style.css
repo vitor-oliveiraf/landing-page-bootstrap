@@ -1,8 +1,3 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-}
 html {
   font-size: 16px;
 }
@@ -13,7 +8,14 @@ body {
 
 /* Variables */
 :root {
-  --p-banners: 8.75rem 0;
+  --p-banners: 8.75rem;
+  --gap-banners: 3rem;
+}
+
+/* Main Container */
+.container-main {
+  max-width: 1800px;
+  padding: 0;
 }
 
 /* Navbar */
@@ -55,17 +57,13 @@ body {
   line-height: 23px;
 }
 
-/* Main Container */
-.container-main {
-  max-width: 1800px;
-}
-
-/* Banner 1 */
+/* Banner Principal */
 .banner-blue-container {
   max-width: 1800px;
+  padding: var(--p-banners) 0;
   background-color: #043873;
-  padding: var(--p-banners);
   color: #ffffff;
+  gap: var(--gap-banners);
 }
 
 .banner-title {
@@ -84,34 +82,36 @@ body {
   max-width: 730px;
 }
 
-/* Container banners 2/3 */
-.container-banners-2-3 {
-  background-color: #ffffff;
+/* Banners Secundários */
+.secontary-banners-container {
+  display: flex;
+  flex-direction: column;
+  margin: var(--p-banners) 0;
+  gap: var(--p-banners);
 }
 
-/* Banner 2 */
-.banner2-container {
-  max-width: 1600px;
-  padding: var(--p-banners);
+/* Banners Secundários 1 e 2 */
+.banner-container {
+  max-width: 1800px;
+  gap: var(--gap-banners);
 }
 
-.banner2-info-container {
-  color: #212529;
+/* Banner Suporte */
+.banner-support-container {
+  max-width: 1800px;
+  padding: var(--p-banners) 0;
+  gap: var(--gap-banners);
 }
 
-.banner2-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.banner2-info {
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-
+/* Responsividade */
 @media screen and (max-width: 1199px) {
   .banner-title {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .button-entre {
+    margin: 1rem 0rem;
   }
 }
