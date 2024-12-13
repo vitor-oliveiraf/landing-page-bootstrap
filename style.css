@@ -103,15 +103,109 @@ body {
   gap: var(--gap-banners);
 }
 
+/* Planos e Preços */
+.plans-container {
+  max-width: 1800px;
+  padding: 0 0 var(--p-banners) 0;
+}
+
+.plan-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.card-plan {
+  width: 100%;
+  min-width: 340px;
+  max-height: 600px;
+  border: #ffe492 1px solid;
+  border-radius: 10px;
+  max-width: 470px;
+  padding: 2.5rem 2.75rem;
+}
+
+.plan-price {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.plan-itens {
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+}
+
+.button-plan {
+  max-width: 192px;
+  background-color: transparent;
+  border: #ffe492 1px solid;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  border-radius: 8px;
+  line-height: 23px;
+}
+
+.card-plan-popular {
+  width: 100%;
+  min-width: 340px;
+  background-color: #043873;
+  color: #ffffff;
+  border-radius: 10px;
+  max-width: 470px;
+  padding: 5rem 2.75rem;
+}
+
+.plan-price-popular {
+  color: #ffe492;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+.plan-itens-popular {
+  font-size: 1.125rem;
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+}
+
+.button-plan-popular {
+  max-width: 192px;
+  background-color: #4f9cf9;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  border-radius: 8px;
+  line-height: 23px;
+}
+
 /* Responsividade */
 @media screen and (max-width: 1199px) {
   .banner-title {
     font-size: 2.5rem;
+  }
+  .plan-cards-container {
+    gap: 1rem;
+  }
+  .card-plan-popular {
+    min-width: 300px;
+    padding: 5rem 1.5rem;
+  }
+  .card-plan {
+    min-width: 300px;
+
+    max-height: 650px;
+    padding: 5rem 1.5rem;
   }
 }
 
 @media screen and (max-width: 991px) {
   .button-entre {
     margin: 1rem 0rem;
+  }
+  .plan-cards-container {
+    flex-direction: column;
+    gap: 0;
   }
 }
