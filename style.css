@@ -48,6 +48,7 @@ body {
 }
 
 .button-entre {
+  max-width: 230px;
   background-color: #4f9cf9;
   color: #ffffff;
   font-size: 1.125rem;
@@ -178,6 +179,48 @@ body {
   padding: 1rem 0;
   border-radius: 8px;
   line-height: 23px;
+}
+
+/* Footer */
+.footer-container {
+  background-color: #043873;
+  color: #ffffff;
+  padding: var(--p-banners) 0 0 0;
+}
+
+.subtitle-links-footer {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.links-footer {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.footer-section-logo,
+.footer-section-button {
+  max-width: 260px;
+}
+
+.divisor {
+  border-top: #2e4e73 1px solid;
+  margin: 3.75rem 0 1.875rem 0;
+}
+
+.select-language {
+  gap: 10px;
+}
+
+.text-footer-bottom {
+  font-weight: 400;
+  margin-right: 3rem;
+}
+
+.social-media-icons {
+  gap: 1.5rem;
 }
 
 /* Responsividade */
