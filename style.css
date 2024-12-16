@@ -16,12 +16,18 @@ body {
 .container-main {
   max-width: 1800px;
   padding: 0;
+  margin: 0 auto;
 }
 
 /* Navbar */
 .navbar-style {
   background-color: #043873;
   max-width: 1800px;
+}
+
+.icon-menu {
+  font-size: 2.5rem;
+  color: #ffffff;
 }
 
 #logo {
@@ -185,6 +191,9 @@ body {
 .footer-container {
   background-color: #043873;
   color: #ffffff;
+}
+
+.footer-info-container {
   padding: var(--p-banners) 0 0 0;
 }
 
@@ -192,6 +201,10 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+
+.footer-section-links {
+  width: 40%;
 }
 
 .links-footer {
@@ -202,6 +215,7 @@ body {
 
 .footer-section-logo,
 .footer-section-button {
+  flex-direction: column;
   max-width: 260px;
 }
 
@@ -216,7 +230,6 @@ body {
 
 .text-footer-bottom {
   font-weight: 400;
-  margin-right: 3rem;
 }
 
 .social-media-icons {
@@ -237,18 +250,84 @@ body {
   }
   .card-plan {
     min-width: 300px;
-
     max-height: 650px;
     padding: 5rem 1.5rem;
+  }
+  .footer-info-container {
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 991px) {
+  :root {
+    --p-banners: 5rem;
+  }
   .button-entre {
     margin: 1rem 0rem;
   }
+  .banner-info {
+    text-align: center;
+  }
+  .banner-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .card-plan,
+  .card-plan-popular {
+    padding: 2.5rem 0;
+  }
   .plan-cards-container {
     flex-direction: column;
-    gap: 0;
+    gap: 2rem;
+  }
+  .responsive-center {
+    align-items: center;
+  }
+  .button-plan-popular,
+  .button-plan {
+    width: 100%;
+  }
+  .footer-info-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-section-logo,
+  .footer-section-button {
+    max-width: 100%;
+    align-items: center;
+  }
+  .footer-section-links {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --p-banners: 3rem;
+  }
+  .divisor {
+    border-top: #2e4e73 1px solid;
+    margin: 2rem 0 1.875rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .plan-cards-container {
+    gap: 1rem;
+  }
+  .plan-itens-popular,
+  .plan-itens {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-section-links {
+    width: 90%;
+  }
+  .footer-section-logo,
+  .footer-section-button {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
   }
 }
